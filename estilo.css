@@ -1,0 +1,137 @@
+/* 1. importar as fontes utilizadas com o google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+*{ margin: 0; padding: 0; box-sizing:border-box; text-decoration: none;}
+/*fazer o reset dos estilos pré-definidos*/
+/* 2. fazer a cor do fundo com css gradient generator*/
+body{ 
+    font-size:100%;
+    background: #ff9ce8;
+background: linear-gradient(150deg,rgba(255, 156, 232, 0.83) 0%, rgba(252, 255, 54, 1) 100%);}
+/* 3. editar os títulos */
+h1 {
+    font-family: 'Comfortaa';
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+h2{
+  font-family: 'Comfortaa'; 
+   font-weight: 300;  
+   margin: 5%;
+   text-align: center;
+}
+h3 {
+    font-family: 'Comfortaa'; 
+   font-weight: 300;
+   margin: 2%;
+} 
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+.logo{
+    border-radius: 35px;
+    width: 75px;
+    height: 75px;
+}
+.sessao-1 {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.coluna-esquerda, .coluna-direita {
+    flex: 1;
+    text-align: justify;
+}
+.paragrafo-sessao-1 {
+    text-align: justify;
+    margin: 5%;
+}
+.coluna-direita {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.figura-1 {
+    width: 150px;
+    height: 150px;
+    margin: 5%;
+    margin-top: 10%;
+}
+/*4. Editando o logo com flexbox */
+/* se eu fizer: 
+img { border-radius: 35px; } 
+vai editar todas as imagens então precisa add uma classe no html para editar só uma específica */ 
+
+.cabecalho { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+.imagem-logo{
+    border-radius: 35px 35px 35px 35px;
+    width: 75px;
+    height: 75px;
+}
+/* Editando o texto e a figura criar a divisão do texto principal */
+
+.sessao-1 {
+margin-top: 20px;
+margin-bottom: 20px;
+display: flex;
+gap: 20px;
+
+}
+.divisao-1, .divisao-2 {
+    flex: 1;
+}
+.titulo-div-1 {
+   font-family: 'Comfortaa'; 
+   font-weight: 300;
+   margin: 0 5% 0;
+}
+.paragrafo-div-1, .paragrafo-div-2{
+    text-align: justify;
+   margin: 5% 5%;
+}
+/* 5 completando ajustes finais*/
+
+.sessao-2 {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.coluna-1, .coluna-2 {
+    flex: 1;
+    text-align: justify;
+}
+.paragrafo-sessao-2 {
+    text-align: justify;
+    margin: 5%;
+}
+.coluna-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.figura-2 {
+    height: 200px;
+    width: auto;
+    margin: 5%;
+    margin-top: 5%;
+}
+
+.coluna-1{
+    display: flex;
+    justify-content: center;
+}
+
+footer{ border-top: solid;
+border-color: gray; }
